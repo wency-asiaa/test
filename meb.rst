@@ -6,20 +6,20 @@ Hardware
 --------
 
 ADAM-6015 (x1) with RTD sensors (1x7)
-  `<http://www.omega.com/pptst/RTD-830.html>`_
-
-  `<http://buy.advantech.com/Remote-I-O-Modules/Ethernet-I-O-Modules-Analog-IO-Modules/model-ADAM-6015-BE.htm?country=USA&token=636372260221909922&f=ATW&f=AUS>`_
+  - `<http://www.omega.com/pptst/RTD-830.html>`_
+  - `<http://buy.advantech.com/Remote-I-O-Modules/Ethernet-I-O-Modules-Analog-IO-Modules/model-ADAM-6015-BE.htm?country=USA&token=636372260221909922&f=ATW&f=AUS>`_
 
 Liquid Flowmeter
-  `<http://www.omega.com/pptst/FPR301_302_303_304.html>`_
+  - `<http://www.omega.com/pptst/FPR301_302_303_304.html>`_
 Arduino ethernet board
-  This board is used to read the liquid flowmeter
+  - This board is used to read the liquid flowmeter
 Aviosys IP Power 9858DX
-  `<http://www.aviosys.com/downloads/manuals/power/9858DX-V1.0B.pdf>`_
+  - `<http://www.aviosys.com/downloads/manuals/power/9858DX-V1.0B.pdf>`_
 USB microphone with USB sound card
-  `<http://www.panasonic.com/in/consumer/tv-audio-video/accessories/microphones/rp-vc201.html>`_
-
-  `<http://www.galileo.com.tw/USB51A.html>`_
+  - `<http://www.panasonic.com/in/consumer/tv-audio-video/accessories/microphones/rp-vc201.html>`_
+  - `<http://www.galileo.com.tw/USB51A.html>`_
+Cisco Catalyst 2960CG switch
+  - `<https://www.cisco.com/c/en/us/support/switches/catalyst-2960cg-8tc-l-compact-switch/model.html>`_
 
 Aviosys IP Power 9858DX
 -----------------------
@@ -30,7 +30,7 @@ With embedded web server and HTTPS protection , 9858DX supports higher grade sec
 
 9858DX allows user to remote control power up to 4 separate devices on/off via network . As support SSL & SNMP, user can use public email like Gmail / Hotmail / Yahoo Mail to get the email as the ON/OFF status change . User can also control by e-mail without doing port forwarding / port mapping and search the other IP Device in webpage directly.
 
-:IP: 10.1.120.91
+:IP: 10.1.164.209
 :MAC: 00:98:58:00:14:f6
 :user: admin
 :password: 12345678
@@ -50,7 +50,7 @@ Arduino ethernet board
 
 This board collect the data from flow meter. We can program it to use DHCP or static IP.
 
-:IP: TBD
+:IP: 10.1.164.210
 :MAC: 90:a2:da:0f:87:07
 
 There are two ways to read the data:
@@ -97,7 +97,7 @@ The ADAM-6015 is a 16-bit, 7-channel RTD input module that provides programmable
 
 There are total three such modules inside EBox, so we have total 3x7=21 RTD sensors. This module supports Modbus/TCP Protocol and following is the function to read RTD sensors. A python module has been built to get the temperature readings. It doesn’t support DHCP and SNMP protocols.
 
-:IP: 10.1.120.91
+:IP: 10.1.164.211
 :MAC: 00:d0:c9:f4:2a:5f
 
 Function Code 03/04
@@ -153,3 +153,9 @@ This device can be used directly in Ubuntu 14.04. In the following we demonstrat
 
   # record sound for 20s
   > arecord -f cd -D hw:1,0 -c 1 -d 20 test.wav
+
+Cisco Catalyst 2960CG switch
+----------------------------
+
+:IP: 10.1.164.208
+:MAC: a0:55:4f:a8:b1:40
