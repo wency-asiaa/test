@@ -35,6 +35,11 @@ With embedded web server and HTTPS protection , 9858DX supports higher grade sec
 :user: admin
 :password: 12345678
 
+:POWER 1: Metrology camera
+:POWER 2: Shutter, Adam6015, Flowmeter
+:POWER 3: Cisco 2960CG
+:POWER 4: PC, Cooling fans
+
 +---------+------------------------------+
 | POWER 1 | Metrology camera             |
 +---------+------------------------------+
