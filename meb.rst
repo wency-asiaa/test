@@ -10,7 +10,7 @@ ADAM-6015 (x1) with RTD sensors (1x7)
   - `<http://buy.advantech.com/Remote-I-O-Modules/Ethernet-I-O-Modules-Analog-IO-Modules/model-ADAM-6015-BE.htm?country=USA&token=636372260221909922&f=ATW&f=AUS>`_
 
 Liquid Flowmeter
-  - `<http://www.omega.com/pptst/FPR301_302_303_304.html>`_
+  - http://www.omega.com/pptst/FPR301_302_303_304.html
 Arduino ethernet board
   - This board is used to read the liquid flowmeter
 Aviosys IP Power 9858DX
