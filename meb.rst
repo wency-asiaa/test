@@ -6,20 +6,20 @@ Hardware
 --------
 
 ADAM-6015 (x1) with RTD sensors (1x7)
-  `< http://www.omega.com/pptst/RTD-830.html >`_
+  `<http://www.omega.com/pptst/RTD-830.html>`_
 
   `<http://buy.advantech.com/Remote-I-O-Modules/Ethernet-I-O-Modules-Analog-IO-Modules/model-ADAM-6015-BE.htm?country=USA&token=636372260221909922&f=ATW&f=AUS>`_
 
 Liquid Flowmeter
-  `< http://www.omega.com/pptst/FPR301_302_303_304.html>`_
+  `<http://www.omega.com/pptst/FPR301_302_303_304.html>`_
 Arduino ethernet board
-   This board is used to read the liquid flowmeter
+  This board is used to read the liquid flowmeter
 Aviosys IP Power 9858DX
-  `< http://www.aviosys.com/downloads/manuals/power/9858DX-V1.0B.pdf>`_
+  `<http://www.aviosys.com/downloads/manuals/power/9858DX-V1.0B.pdf>`_
 USB microphone with USB sound card
-  `< http://www.panasonic.com/in/consumer/tv-audio-video/accessories/microphones/rp-vc201.html>`_
+  `<http://www.panasonic.com/in/consumer/tv-audio-video/accessories/microphones/rp-vc201.html>`_
 
-  `< http://www.galileo.com.tw/USB51A.html>`_
+  `<http://www.galileo.com.tw/USB51A.html>`_
 
 Aviosys IP Power 9858DX
 -----------------------
@@ -61,10 +61,10 @@ Telnet protocol
 ::
 
   > telnet 10.1.120.12
-   :Q
+  :Q
   Flow = 0 Hz
   :X
-   unknow n
+  unknown
 
 SNMP protocol
   You can also use SNMP command to query.
@@ -113,7 +113,7 @@ Function Code 03/04
 
   01 04 00 01 00 02
 
-   Response message format for function code 03 or 04:
+  Response message format for function code 03 or 04:
 
   +-----------------+---------------+------------+------+------+-----+
   | Station Address | Function Code | Byte Count | Data | Data | ... |
