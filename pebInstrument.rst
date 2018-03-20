@@ -125,11 +125,11 @@ until available. Also, if a telnet client doesn’t issue any command for more t
 ::
 
   > telnet 10.1.164.97
-   :Q
+  :Q
   1FC0		# default value, all devices are power up except for AG cameras
   :X
-   unknow
-   :S1FFF1FFF	# turn on all devices
+  unknown
+  :S1FFF1FFF	# turn on all devices
   :Q
   1FFF
   :S0FFF0000	# turn off all devices except for the switch
@@ -229,24 +229,24 @@ We can use telnet to send commands to this board.
 
   > telnet 10.1.164.99
   # Send (a) or (b) to switch between two different LED modes
-   :a     # turn on for 10.24us, turn off for 89.64us, period is 0.1ms
+  :a     # turn on for 10.24us, turn off for 89.64us, period is 0.1ms
   :b     # turn on for 10.24ms, turn off for 89.60ms, period is 100ms
 
   # Send (q) to query current status
-   :q     # query, (current, mode a, mode b)
+  :q     # query, (current, mode a, mode b)
   100000,105,100,105,100000,105
 
-  # Send (f) to setup mode (a) parameters 
+  # Send (f) to setup mode (a) parameters
   :f010212345     # set period to 12345us, duty cycle=102/1024=10%
 
-  # Send (g) to setup mode (b) parameters 
+  # Send (g) to setup mode (b) parameters
   :g0306123     # set period to 123us, duty cycle=306/1024=30%
 
   # Send (q) to query current status
   :q     # query
   100000,105,12345,102,123,306
 
-  # Send (c) to turn off LED 
+  # Send (c) to turn off LED
   :c
 
   # Send (z) to close telnet connection
