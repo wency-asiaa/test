@@ -23,26 +23,34 @@ Hardware
 Aviosys IP Power 9858DX
 -----------------------
 
-IP Power 9858DX is a new generation of the Power Distribution Unit (PDU) & Remote Power Control (RPC) system. It's able to connect to WiFi network with WPS function for easy & quick set up a device to user’s wireless home/office network and control in the network.
+IP Power 9858DX is a new generation of the Power Distribution Unit (PDU) & Remote Power Control (RPC) system. It's able
+to connect to WiFi network with WPS function for easy & quick set up a device to user’s wireless home/office network
+and control in the network.
 
-With embedded web server and HTTPS protection , 9858DX supports higher grade security as working on Internet. User can control power easily and more safely through the web browser on Windows PC or on Smartphone like Internet Explorer (IE) , Firefox , Google Chrome , Safari ( iOS ) and Android system.
+With embedded web server and HTTPS protection , 9858DX supports higher grade security as working on Internet. User can
+control power easily and more safely through the web browser on Windows PC or on Smartphone like Internet Explorer (IE)
+, Firefox , Google Chrome , Safari ( iOS ) and Android system.
 
-9858DX allows user to remote control power up to 4 separate devices on/off via network . As support SSL & SNMP, user can use public email like Gmail / Hotmail / Yahoo Mail to get the email as the ON/OFF status change . User can also control by e-mail without doing port forwarding / port mapping and search the other IP Device in webpage directly.
+9858DX allows user to remote control power up to 4 separate devices on/off via network . As support SSL & SNMP, user
+can use public email like Gmail / Hotmail / Yahoo Mail to get the email as the ON/OFF status change . User can also
+control by e-mail without doing port forwarding / port mapping and search the other IP Device in webpage directly.
 
 :IP: 10.1.164.209
 :MAC: 00:98:58:00:14:f6
 :user: admin
 :password: 12345678
 
-+---------+------------------------------+
-| POWER 1 | Metrology camera             |
-+---------+------------------------------+
-| POWER 2 | Shutter, Adam6015, Flowmeter |
-+---------+------------------------------+
-| POWER 3 | Cisco 2960CG                 |
-+---------+------------------------------+
-| POWER 4 | PC, Cooling fans             |
-+---------+------------------------------+
++---------+------------------------------+---------+
+| Output  | Devices                      | Default |
++=========+==============================+=========+
+| POWER 1 | Metrology camera             | Off     |
++---------+------------------------------+---------+
+| POWER 2 | Shutter, Adam6015, Flowmeter | Off     |
++---------+------------------------------+---------+
+| POWER 3 | Cisco 2960CG                 | On      |
++---------+------------------------------+---------+
+| POWER 4 | PC, Cooling fans             | Off     |
++---------+------------------------------+---------+
 
 http://admin:12345678@10.1.164.209/set.cmd?cmd=
 
